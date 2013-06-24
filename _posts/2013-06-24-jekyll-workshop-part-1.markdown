@@ -1,9 +1,7 @@
 ---
 layout: post
-title: Jekyll Workshop Part 1
+title: Jekyll Workshop Part 1 - Getting Started
 ---
-
-### Getting started
 
 Let's get started with Jekyll!
 

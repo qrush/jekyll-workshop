@@ -1,9 +1,7 @@
 ---
 layout: post
-title: Jekyll Workshop Part 2
+title: Jekyll Workshop Part 2 - Publish your site
 ---
-
-### Publishing your site
 
 What? Already? Let's ship it!
 
