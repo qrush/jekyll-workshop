@@ -34,13 +34,13 @@ That should be it! In a few moments your site will appear at [http://johndoe.git
 
 ### But it's broken!
 
-By default Jekyll assumes you're going to be serving a site off the root domain, and not in a subdirectory. We'll have to make a quick edit to make our CSS work again. Open up `_layouts/default.html` and replace change these two `<link>` tags:
+By default Jekyll assumes you're going to be serving a site off the root domain, and not in a subdirectory. We'll have to make a quick edit to make our CSS work again. Open up `_layouts/default.html` in your favorite editor and replace these two `<link>` tags with (just remove the leading slash on `css/`):
 
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+    <link rel="stylesheet" href="css/syntax.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
 Now let's push this fix out to GitHub:
 
