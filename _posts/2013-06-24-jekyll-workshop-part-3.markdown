@@ -100,6 +100,6 @@ It's that time again: Deploy your site! Let's commit our work and push it to Git
 
     $ git add .
     $ git commit -m "Added a page"
-    $ git push origin master
+    $ git push
 
 With luck, in a few moments you'll see your page appear up on GitHub.

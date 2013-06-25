@@ -137,8 +137,8 @@ ul.posts span {
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .4em;
-  line-height: 13px;
+  padding: .4em .4em;
+  line-height: 14px;
 }
 
 .post ul, .post ol {

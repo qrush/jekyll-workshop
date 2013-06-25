@@ -14,6 +14,7 @@ Posts are created in the `_posts` directory, with this scheme:
 Here's some example posts:
 
     2011-12-31-new-years-eve-is-awesome.md
+
     2012-09-12-how-to-write-a-blog.textile
 
 Let's make one now! In your terminal, run:
@@ -51,3 +52,13 @@ Find an image somewhere online, and move it into this folder. If you're on OSX, 
     ![The best dog ever.](/images/dog.jpg)
 
     _Awesome!_
+
+### Ship it!
+
+It's that time again: Deploy your site! Let's commit our work and push it to GitHub:
+
+    $ git add .
+    $ git commit -m "Added a post"
+    $ git push
+
+With luck, in a few moments you'll see your page appear up on GitHub.

@@ -25,7 +25,7 @@ Next we need to send your code up to GitHub. I'm going to pretend your github us
     $ git add .
     $ git commit -m "Initial commit"
     $ git remote add origin git@github.com:johndoe/workshop.git
-    $ git push origin master
+    $ git push origin master -u
 
 ### View your site
 
