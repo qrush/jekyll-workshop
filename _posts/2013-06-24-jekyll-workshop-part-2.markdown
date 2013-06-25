@@ -21,11 +21,11 @@ No problem! GitHub has a great [setup guide](https://help.github.com/articles/se
 
 Next we need to send your code up to GitHub. I'm going to pretend your github username is `johndoe`, make sure to replace it with yours! From your terminal, run:
 
-    git init
-    git add .
-    git commit -m "Initial commit"
-    git remote add origin git@github.com:johndoe/workshop.git
-    git push origin master
+    $ git init
+    $ git add .
+    $ git commit -m "Initial commit"
+    $ git remote add origin git@github.com:johndoe/workshop.git
+    $ git push origin master
 
 ### View your site
 

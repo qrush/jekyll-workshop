@@ -13,8 +13,10 @@ If you haven't installed Ruby yet, please do! The easiest way to install it on m
 
 Next up open up Terminal (or whatever you're using), and run:
 
-    jekyll new workshop
-    cd workshop
+    $ jekyll new workshop
+    $ cd workshop
+
+**Note**: All terminal commands will be noted with a `$` in front of them.
 
 This will make a new Jekyll site in a directory called `workshop`, and then jump inside that directory.
 
@@ -22,7 +24,7 @@ This will make a new Jekyll site in a directory called `workshop`, and then jump
 
 Let's look at what we generated. We're going to keep this running from here on. Just run:
 
-    jekyll serve --watch
+    $ jekyll serve --watch
 
 You'll see a bunch of stuff spit out to your screen. You now should be able to browse to [http://localhost:4000](http://localhost:4000) in your favorite browser, and see your Jekyll site!
 

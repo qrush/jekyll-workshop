@@ -9,7 +9,7 @@ Pages are the easiest way to just publish content with Jekyll. Pages are a singl
 
 There's already one page in your Jekyll site by default: `index.html`. Let's make a new one:
 
-    touch about.html
+    $ touch about.html
 
 Open this up in Sublime (or your text editor of choice), and copy/paste this in:
 
@@ -51,12 +51,15 @@ This piece of metadata is called the "YAML Frontmatter" in the Jekyll docs. YAML
 
 If you reload your `about.html` page in the browser, the content will now be styled! Where did that come from? If you take a look in your `_layouts` folder, you'll see a `default.html`:
 
-    % tree _layouts
+    $ tree _layouts
+
     _layouts
     ├── default.html
     └── post.html
 
 Once you specify a `layout`, Jekyll will run each page through the layout and inject its content. (Where the `content` code snippet is!)
+
+While you're in there, edit the header and footer to include your name and a different title. You might need to restart `jekyll serve --watch` in order to get the header and footer to refresh.
 
 ### Whoa, what?
 
@@ -90,3 +93,13 @@ And after we specified the layout:
                             *-----------------------*
     
     =
+
+### Ship it!
+
+It's that time again: Deploy your site! Let's commit our work and push it to GitHub:
+
+    $ git add .
+    $ git commit -m "Added a page"
+    $ git push origin master
+
+With luck, in a few moments you'll see your page appear up on GitHub.
