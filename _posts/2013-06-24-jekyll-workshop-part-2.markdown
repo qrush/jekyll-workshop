@@ -24,9 +24,25 @@ Next we need to send your code up to GitHub. I'm going to pretend your github us
     $ git init
     $ git add .
     $ git commit -m "Initial commit"
+    $ git branch -m gh-pages
     $ git remote add origin git@github.com:johndoe/workshop.git
-    $ git push origin master -u
+    $ git push origin gh-pages -u
 
 ### View your site
 
 That should be it! In a few moments your site will appear at [http://johndoe.github.io/workshop/](http://johndoe.github.io/workshop/).
+
+### But it's broken!
+
+By default Jekyll assumes you're going to be serving a site off the root domain, and not in a subdirectory. We'll have to make a quick edit to make our CSS work again. Open up `_layouts/default.html` and replace change these two `<link>` tags:
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+
+Now let's push this fix out to GitHub:
+
+    $ git commit -am "Fixed CSS"
+    $ git push
