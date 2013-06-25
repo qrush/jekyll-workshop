@@ -11,7 +11,7 @@ GitHub hosts Jekyll sites for free via [GitHub Pages](http://pages.github.com). 
 
 ### Create a repo
 
-We'll need to make a repo in order to host your content on GitHub. Once you're signed in, hit the big "Create Repo" button, or [follow this guide](https://help.github.com/articles/create-a-repo). Call the repo `workshop`.
+We'll need to make a repo in order to host your content on GitHub. Once you're signed in, hit the big "Create Repo" button, or [follow this guide](https://help.github.com/articles/create-a-repo). If your username is `johndoe`, call the repo `johndoe.github.io`.
 
 ### First time Git setup?
 
@@ -24,25 +24,9 @@ Next we need to send your code up to GitHub. I'm going to pretend your github us
     $ git init
     $ git add .
     $ git commit -m "Initial commit"
-    $ git branch -m gh-pages
-    $ git remote add origin git@github.com:johndoe/workshop.git
-    $ git push origin gh-pages -u
+    $ git remote add origin git@github.com:johndoe/johndoe.github.io.git
+    $ git push origin master -u
 
 ### View your site
 
-That should be it! In a few moments your site will appear at [http://johndoe.github.io/workshop/](http://johndoe.github.io/workshop/).
-
-### But it's broken!
-
-By default Jekyll assumes you're going to be serving a site off the root domain, and not in a subdirectory. We'll have to make a quick edit to make our CSS work again. Open up `_layouts/default.html` in your favorite editor and replace these two `<link>` tags with (just remove the leading slash on `css/`):
-
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="css/syntax.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
-
-Now let's push this fix out to GitHub:
-
-    $ git commit -am "Fixed CSS"
-    $ git push
+That should be it! In a few moments your site will appear at [http://johndoe.github.io/](http://johndoe.github.io/).
