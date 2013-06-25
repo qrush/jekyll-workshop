@@ -25,6 +25,8 @@ Open this up in Sublime (or your text editor of choice), and copy/paste this in:
 
 Fill in the blanks! Now if you browse to [http://localhost:4000/about.html](http://localhost:4000/about.html) you should see your about page.
 
+**Note**: This won't show up in the post list, since it's a page!
+
 ### But it's unstyled!?
 
 By default pages in Jekyll don't have a layout, which we use as basically a template to share code, such as your stylesheets, javascripts, etc. You have to opt-in to a layout. Luckily we already have one when we generated our Jekyll site.
